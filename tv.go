@@ -9,6 +9,7 @@ import (
 
 // TVDetails type is a struct for details JSON response.
 type TVDetails struct {
+	Adult bool `json:"adult"`
 	BackdropPath string `json:"backdrop_path"`
 	CreatedBy    []struct {
 		ID          int64  `json:"id"`
